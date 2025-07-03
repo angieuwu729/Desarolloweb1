@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vértice Diseño</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <script src="js/animacion3D.js"></script>
+  <script src="js/cuboScroll.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="text-center p-4 text-white">
+    <h1><img src="img/logo.png" alt="Logo" height="50" /> Vértice</h1>
+  </header>
+
+  <!-- Nota principal -->
+  <section class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Nosotros</h2>
+        <p>En Vértice Diseño creemos que el diseño no es solo estética, es experiencia, estrategia y emoción. Transformamos ideas en identidades visuales sólidas, plataformas digitales atractivas y soluciones gráficas memorables.
+Trabajamos con marcas que buscan destacar y conectar genuinamente con su público.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/Multimedia.jpeg" alt="Animación" class="img-fluid" />
+      </div>
+    </div>
+  </section>
+
+  <section class="pastillas">
+    <h2>Experiencia interactiva</h2>
+    <p>Queremos que te sientas parte del proceso creativo. Nuestra web está diseñada para que puedas:</p>
+
+<p>• Probar en vivo nuestras paletas de colores, tipografías y mockups.</p>
+
+<p>• Crear tu moodboard personalizado seleccionando estilos que te gusten.</p>
+
+<p>• Explorar nuestro portfolio con animaciones fluidas, sliders interactivos y casos de estudio navegables.</p>
+
+<p>• Agendar una reunión rápida con nuestro equipo directamente desde el sitio.</p>
+
+<p>• Cada elemento está pensado para que no solo veas nuestro trabajo, sino que lo experimentes.</p>
+    <div id="canvas3d"></div>
+</section>
+
+  <!-- Cubo 3D que cambia tamaño con scroll -->
+  <section class="pastillas">
+    <h2 class="text-center mb-3">Interactuá con nuestra identidad</h2>
+    <div id="interactivoCanvas" class="mx-auto"></div>
+  </section>
+
+
+<!-- Servicios -->
+<section class="pastillas">
+  <h2>Nuestros Servicios</h2>
+  <div class="grid">
+    <div class="item">
+      <img src="img/contenido visual.jpg" class="servicio-img" />
+      <p>Contenido visual</p>
+    </div>
+    <div class="item">
+      <img src="img/grafico.png" class="servicio-img" />
+      <p>Diseño gráfico</p>
+    </div>
+    <div class="item">
+      <img src="img/marketing.jpg" class="servicio-img" />
+      <p>Marketing</p>
+    </div>
+    <div class="item">
+      <img src="img/UX.jpg" class="servicio-img" />
+      <p>Diseño Web</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="zona-drag">
+  <h2>Arrastrá tu inspiración</h2>
+  <p class="descripcion-inspiracion">
+    Elegí los elementos que más conecten con tu estilo y soltálos en tu área creativa.
+    Armá tu moodboard visual y descubrí el potencial de tu identidad.
+  </p>
+
+  <div class="drag-area">
+    <img src="img/visual4.jpeg" alt="Estilo divertido" class="drag-item" draggable="true" />
+    <img src="img/visual3.jpeg" alt="Tipografía moderna" class="drag-item" draggable="true" />
+    <img src="img/visual2.jpeg" alt="Diseño pacífico" class="drag-item" draggable="true" />
+    <img src="img/visual1.jpeg" alt="Idea creativa" class="drag-item" draggable="true" />
+  </div>
+
+  <div class="drop-zone" ondragover="event.preventDefault()" ondrop="soltar(event)">
+    <p>Soltá acá tus ideas</p>
+  </div>
+
+  <button class="guardar-moodboard">Guardar Moodboard</button>
+</section>
+
+
+
+    <!-- Equipo -->
+  <section class="container mb-5">
+    <h2>Integrante</h2>
+    <div class="d-flex flex-wrap gap-3">
+      <img src="img/yo.jpeg" class="foto-integrante" draggable="true" />
+     <h3>Angela Nadin Espinosa</h3>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center p-3">
+    <p>Diseño Multimedial - Diseño y Programación Web I - Comisión DMM3BP - Docente: Toyos Omar - 3 de Julio del 2025</p>
+  </footer>
+
+        <script src="drag.js"></script>
+</body>
+</html>
